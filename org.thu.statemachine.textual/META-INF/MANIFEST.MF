@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.thu.statemachine.textual
+Bundle-ManifestVersion: 2
+Bundle-Name: org.thu.statemachine.textual
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.thu.statemachine.textual; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.thu.statemachine.textual.scoping,
+ org.thu.statemachine.textual.generator,
+ org.thu.statemachine.textual.validation,
+ org.thu.statemachine.textual.parser.antlr,
+ org.thu.statemachine.textual.sMDSL.impl,
+ org.thu.statemachine.textual.sMDSL.util,
+ org.thu.statemachine.textual.serializer,
+ org.thu.statemachine.textual,
+ org.thu.statemachine.textual.parser.antlr.internal,
+ org.thu.statemachine.textual.services,
+ org.thu.statemachine.textual.sMDSL
+Import-Package: org.apache.log4j

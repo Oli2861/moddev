@@ -1,0 +1,7 @@
+grammar org.thu.statemachine.textual.SMDSL with org.eclipse.xtext.common.Terminals
+
+generate sMDSL "http://www.thu.org/statemachine/textual/SMDSL"
+
+Entry:State | Transition;
+State:'S' name = ID '{' (contents += Entry)* '}';
+Transition:'T' '->' to = [State];
